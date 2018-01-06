@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ryan美食屋</title>
+    <link rel="stylesheet" href="/templets/default/style/iconfont.css">
+    <link rel="stylesheet" href="/templets/default/style/responsive.css">
+    <link rel="stylesheet" href="/templets/default/style/basic.css">
+    <link rel="stylesheet" href="/templets/default/style/recommand.css">    
+    <link rel="stylesheet" href="/templets/default/style/list.css">    
+</head>
+<body>
+    <div class="container-fluid center">
+        {dede:include filename='header.htm'/}
+        <div class="container center container-wrap">
+            <div class="position">
+                <p>当前位置：{dede:field name='position'/}</p>
+            </div>
+            <div class="row">
+                <div class="content col-xs-24 col-sm-24 col-md-16">
+                  <ul class="news-list">
+                    {dede:list pagesize='10' orderway=''}                                             
+                      <li class="list-item">
+                          <a href="[field:arcurl/]">
+                            <div class="thumbnail"><img src="[field:picname/]" alt=""></div>
+                            <div class="content-text">
+                                <h3>[field:title/]</h3>
+                                <p>[field:description/]</p>
+                            </div>
+                          </a>
+                      </li>
+                      {/dede:list}                                
+                  </ul>
+                  <div class="paging">{dede:pagelist listitem="info,index,end,pre,next,pageno" listsize="5"/} </div>                   
+                </div>
+                {dede:include filename='recommand.htm'/}
+            </div>
+        </div>
+        {dede:include filename='footer.htm'/} 
+    </div>
+    <script src="/templets/default/js/jquery-3.2.1.min.js"></script>    
+    <script src="/templets/default/js/basic.js"></script>
+    <script src="/templets/default/js/nav.js"></script>
+</body>
+</html>

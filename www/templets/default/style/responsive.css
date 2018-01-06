@@ -1,0 +1,615 @@
+@charset "UTF-8";
+html {
+  font-size: 625%; }
+
+body {
+  font-size: 0.14rem;
+  color: #333;
+  margin: 0;
+  overflow-x: hidden; 
+}
+
+h1,
+h2,
+h3,
+p {
+  padding: 0;
+  margin: 0; }
+
+ul,
+ol,
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+* {
+  box-sizing: border-box; }
+
+img {
+  border: none; }
+
+.center {
+  margin-left: auto;
+  margin-right: auto; }
+
+.max-width {
+  width: 100%; }
+
+.max-height {
+  height: 100%; }
+
+.inline-block {
+  display: inline-block; }
+
+.text-center {
+  text-align: center; }
+
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+.cutout-text{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.float-left {
+  float: left; }
+
+.float-right {
+  float: right; }
+
+.container-fluid {
+  width: 100%; }
+
+.row:after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden; }
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px; } }
+@media (min-width: 992px) {
+  .container {
+    width: 970px; } }
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px; } }
+/*偏移*/
+.col-offset-1 {
+  margin-left: 4.16666666%; }
+
+.col-offset-2 {
+  margin-left: 8.33333332%; }
+
+.col-offset-3 {
+  margin-left: 12.49999998%; }
+
+.col-offset-4 {
+  margin-left: 16.66666664%; }
+
+.col-offset-5 {
+  margin-left: 20.8333333%; }
+
+.col-offset-6 {
+  margin-left: 24.99999996%; }
+
+.col-offset-7 {
+  margin-left: 29.16666662%; }
+
+.col-offset-8 {
+  margin-left: 33.33333328%; }
+
+.col-offset-9 {
+  margin-left: 37.49999994%; }
+
+.col-offset-10 {
+  margin-left: 41.6666666%; }
+
+.col-offset-11 {
+  margin-left: 45.83333326%; }
+
+.col-offset-12 {
+  margin-left: 49.99999992%; }
+
+.col-offset-13 {
+  margin-left: 54.16666658%; }
+
+.col-offset-14 {
+  margin-left: 58.33333324%; }
+
+.col-offset-15 {
+  margin-left: 62.4999999%; }
+
+.col-offset-16 {
+  margin-left: 66.66666656%; }
+
+.col-offset-17 {
+  margin-left: 70.83333322%; }
+
+.col-offset-18 {
+  margin-left: 74.99999988%; }
+
+.col-offset-19 {
+  margin-left: 79.16666654%; }
+
+.col-offset-20 {
+  margin-left: 83.3333332%; }
+
+.col-offset-21 {
+  margin-left: 87.49999986%; }
+
+.col-offset-22 {
+  margin-left: 91.66666652%; }
+
+.col-offset-23 {
+  margin-left: 95.83333318%; }
+
+.col-offset-24 {
+  margin-left: 99.99999984%; }
+
+/* 网格布局 */
+/* 超小设备（手机，小于 768px） */
+.col-xs-1 {
+  float: left;
+  width: 4.16666666%; }
+
+.col-xs-2 {
+  float: left;
+  width: 8.33333332%; }
+
+.col-xs-3 {
+  float: left;
+  width: 12.49999998%; }
+
+.col-xs-4 {
+  float: left;
+  width: 16.66666664%; }
+
+.col-xs-5 {
+  float: left;
+  width: 20.8333333%; }
+
+.col-xs-6 {
+  float: left;
+  width: 24.99999996%; }
+
+.col-xs-7 {
+  float: left;
+  width: 29.16666662%; }
+
+.col-xs-8 {
+  float: left;
+  width: 33.33333328%; }
+
+.col-xs-9 {
+  float: left;
+  width: 37.49999994%; }
+
+.col-xs-10 {
+  float: left;
+  width: 41.6666666%; }
+
+.col-xs-11 {
+  float: left;
+  width: 45.83333326%; }
+
+.col-xs-12 {
+  float: left;
+  width: 49.99999992%; }
+
+.col-xs-13 {
+  float: left;
+  width: 54.16666658%; }
+
+.col-xs-14 {
+  float: left;
+  width: 58.33333324%; }
+
+.col-xs-15 {
+  float: left;
+  width: 62.4999999%; }
+
+.col-xs-16 {
+  float: left;
+  width: 66.66666656%; }
+
+.col-xs-17 {
+  float: left;
+  width: 70.83333322%; }
+
+.col-xs-18 {
+  float: left;
+  width: 74.99999988%; }
+
+.col-xs-19 {
+  float: left;
+  width: 79.16666654%; }
+
+.col-xs-20 {
+  float: left;
+  width: 83.3333332%; }
+
+.col-xs-21 {
+  float: left;
+  width: 87.49999986%; }
+
+.col-xs-22 {
+  float: left;
+  width: 91.66666652%; }
+
+.col-xs-23 {
+  float: left;
+  width: 95.83333318%; }
+
+.col-xs-24 {
+  float: left;
+  width: 99.99999984%; }
+
+/* 小型设备（平板电脑，768px 起） */
+@media (min-width: 768px) {
+  .col-sm-1 {
+    float: left;
+    width: 4.16666666%; }
+
+  .col-sm-2 {
+    float: left;
+    width: 8.33333332%; }
+
+  .col-sm-3 {
+    float: left;
+    width: 12.49999998%; }
+
+  .col-sm-4 {
+    float: left;
+    width: 16.66666664%; }
+
+  .col-sm-5 {
+    float: left;
+    width: 20.8333333%; }
+
+  .col-sm-6 {
+    float: left;
+    width: 24.99999996%; }
+
+  .col-sm-7 {
+    float: left;
+    width: 29.16666662%; }
+
+  .col-sm-8 {
+    float: left;
+    width: 33.33333328%; }
+
+  .col-sm-9 {
+    float: left;
+    width: 37.49999994%; }
+
+  .col-sm-10 {
+    float: left;
+    width: 41.6666666%; }
+
+  .col-sm-11 {
+    float: left;
+    width: 45.83333326%; }
+
+  .col-sm-12 {
+    float: left;
+    width: 49.99999992%; }
+
+  .col-sm-13 {
+    float: left;
+    width: 54.16666658%; }
+
+  .col-sm-14 {
+    float: left;
+    width: 58.33333324%; }
+
+  .col-sm-15 {
+    float: left;
+    width: 62.4999999%; }
+
+  .col-sm-16 {
+    float: left;
+    width: 66.66666656%; }
+
+  .col-sm-17 {
+    float: left;
+    width: 70.83333322%; }
+
+  .col-sm-18 {
+    float: left;
+    width: 74.99999988%; }
+
+  .col-sm-19 {
+    float: left;
+    width: 79.16666654%; }
+
+  .col-sm-20 {
+    float: left;
+    width: 83.3333332%; }
+
+  .col-sm-21 {
+    float: left;
+    width: 87.49999986%; }
+
+  .col-sm-22 {
+    float: left;
+    width: 91.66666652%; }
+
+  .col-sm-23 {
+    float: left;
+    width: 95.83333318%; }
+
+  .col-sm-24 {
+    float: left;
+    width: 99.99999984%; } }
+/* 中型设备（台式电脑，992px 起） */
+@media (min-width: 992px) {
+  .col-md-1 {
+    float: left;
+    width: 4.16666666%; }
+
+  .col-md-2 {
+    float: left;
+    width: 8.33333332%; }
+
+  .col-md-3 {
+    float: left;
+    width: 12.49999998%; }
+
+  .col-md-4 {
+    float: left;
+    width: 16.66666664%; }
+
+  .col-md-5 {
+    float: left;
+    width: 20.8333333%; }
+
+  .col-md-6 {
+    float: left;
+    width: 24.99999996%; }
+
+  .col-md-7 {
+    float: left;
+    width: 29.16666662%; }
+
+  .col-md-8 {
+    float: left;
+    width: 33.33333328%; }
+
+  .col-md-9 {
+    float: left;
+    width: 37.49999994%; }
+
+  .col-md-10 {
+    float: left;
+    width: 41.6666666%; }
+
+  .col-md-11 {
+    float: left;
+    width: 45.83333326%; }
+
+  .col-md-12 {
+    float: left;
+    width: 49.99999992%; }
+
+  .col-md-13 {
+    float: left;
+    width: 54.16666658%; }
+
+  .col-md-14 {
+    float: left;
+    width: 58.33333324%; }
+
+  .col-md-15 {
+    float: left;
+    width: 62.4999999%; }
+
+  .col-md-16 {
+    float: left;
+    width: 66.66666656%; }
+
+  .col-md-17 {
+    float: left;
+    width: 70.83333322%; }
+
+  .col-md-18 {
+    float: left;
+    width: 74.99999988%; }
+
+  .col-md-19 {
+    float: left;
+    width: 79.16666654%; }
+
+  .col-md-20 {
+    float: left;
+    width: 83.3333332%; }
+
+  .col-md-21 {
+    float: left;
+    width: 87.49999986%; }
+
+  .col-md-22 {
+    float: left;
+    width: 91.66666652%; }
+
+  .col-md-23 {
+    float: left;
+    width: 95.83333318%; }
+
+  .col-md-24 {
+    float: left;
+    width: 99.99999984%; } }
+/* 大型设备（大台式电脑，1200px 起） */
+@media (min-width: 1200px) {
+  .col-lg-1 {
+    float: left;
+    width: 4.16666666%; }
+
+  .col-lg-2 {
+    float: left;
+    width: 8.33333332%; }
+
+  .col-lg-3 {
+    float: left;
+    width: 12.49999998%; }
+
+  .col-lg-4 {
+    float: left;
+    width: 16.66666664%; }
+
+  .col-lg-5 {
+    float: left;
+    width: 20.8333333%; }
+
+  .col-lg-6 {
+    float: left;
+    width: 24.99999996%; }
+
+  .col-lg-7 {
+    float: left;
+    width: 29.16666662%; }
+
+  .col-lg-8 {
+    float: left;
+    width: 33.33333328%; }
+
+  .col-lg-9 {
+    float: left;
+    width: 37.49999994%; }
+
+  .col-lg-10 {
+    float: left;
+    width: 41.6666666%; }
+
+  .col-lg-11 {
+    float: left;
+    width: 45.83333326%; }
+
+  .col-lg-12 {
+    float: left;
+    width: 49.99999992%; }
+
+  .col-lg-13 {
+    float: left;
+    width: 54.16666658%; }
+
+  .col-lg-14 {
+    float: left;
+    width: 58.33333324%; }
+
+  .col-lg-15 {
+    float: left;
+    width: 62.4999999%; }
+
+  .col-lg-16 {
+    float: left;
+    width: 66.66666656%; }
+
+  .col-lg-17 {
+    float: left;
+    width: 70.83333322%; }
+
+  .col-lg-18 {
+    float: left;
+    width: 74.99999988%; }
+
+  .col-lg-19 {
+    float: left;
+    width: 79.16666654%; }
+
+  .col-lg-20 {
+    float: left;
+    width: 83.3333332%; }
+
+  .col-lg-21 {
+    float: left;
+    width: 87.49999986%; }
+
+  .col-lg-22 {
+    float: left;
+    width: 91.66666652%; }
+
+  .col-lg-23 {
+    float: left;
+    width: 95.83333318%; }
+
+  .col-lg-24 {
+    float: left;
+    width: 99.99999984%; } }
+@media (max-width: 767px) {
+  .hidden-xs {
+    display: none !important; }
+
+  .visible-xs {
+    display: block !important; }
+
+  .visible-sm {
+    display: none !important; }
+
+  .visible-md {
+    display: none !important; }
+
+  .visible-lg {
+    display: none !important; } }
+@media (min-width: 768px) and (max-width: 991px) {
+  .hidden-sm {
+    display: none !important; }
+
+  .visible-xs {
+    display: none !important; }
+
+  .visible-sm {
+    display: block !important; }
+
+  .visible-md {
+    display: none !important; }
+
+  .visible-lg {
+    display: none !important; } }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hidden-md {
+    display: none !important; }
+
+  .visible-xs {
+    display: none !important; }
+
+  .visible-sm {
+    display: none !important; }
+
+  .visible-md {
+    display: block !important; }
+
+  .visible-lg {
+    display: none !important; } }
+@media (min-width: 1200px) {
+  .hidden-lg {
+    display: none !important; }
+
+  .visible-xs {
+    display: none !important; }
+
+  .visible-sm {
+    display: none !important; }
+
+  .visible-md {
+    display: none !important; }
+
+  .visible-lg {
+    display: block !important; } }

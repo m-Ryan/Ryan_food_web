@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ryan美食屋</title>
+    <link rel="stylesheet" href="/templets/default/style/iconfont.css">
+    <link rel="stylesheet" href="/templets/default/style/responsive.css">
+    <link rel="stylesheet" href="/templets/default/style/basic.css">
+    <link rel="stylesheet" href="/templets/default/style/index.css">
+    <link rel="stylesheet" href="/templets/default/style/custom-carousel.css">
+    
+</head>
+<body>
+    <div class="container-fluid center">
+        {dede:include filename='header.htm'/}        
+        <div class="row container-wrap recommand hidden-xs hidden-sm">
+            <div class="row">
+                <h4 class="section-title">今日推荐</h4>
+                <div class="row" id="content-container">
+                   <ul class="content-list">
+                        {dede:arclist row='4' orderby='id' typeid='5' }  
+                        <li class="col-xs-24 col-md-12 pc-content">
+                            <h3 class="title">[field:title/]</h3>
+                            <p>[field:description/]</p>
+                            <div class="text-center">
+                                <a href="[field:arcurl/]" class="read-btn">查看更多</a>
+                            </div>
+                        </li>
+                        {/dede:arclist}            
+                    </ul>
+                    <div class="col-xs-24 col-md-12 show-pic">
+                        <ul class="row">
+                                {dede:arclist row='4' orderby='id' typeid='5' }                          
+                                <li class="col-sm-10">
+                                    <div><img src="[field:picname/]" alt=""></div>
+                                </li>
+                            {/dede:arclist}          
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row knowledge">
+            <div class="row">
+                <div id="focus" class="focus">
+                    <div class="hd">
+                        <ul></ul>
+                    </div>
+                    <div class="bd">
+                        <ul>
+                            {dede:arclist row='4' orderby='id' typeid='1' }  
+                            <li><a href="[field:arcurl/]"><img _src="[field:picname/]" src="[field:picname/]" /></a></li>
+                            {/dede:arclist}                                               
+                        </ul>
+                    </div>
+                    <div class="prevbtn hidden-xs hidden-sm"></div>
+                    <div class="nextbtn hidden-xs hidden-sm"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row container-wrap recommand hidden-md hidden-lg">
+            <div class="row">
+                    {dede:arclist row='1' orderby='id' typeid='5' }  
+                    <h4 class="section-title">今日推荐 --[field:title/]</h4>
+                    <div class="row">
+                        <div class="col-xs-24">
+                                <div class="row">
+                                    <div class="col-xs-24"><img src="[field:picname/]" alt="" class="max-width"></div>
+                                </div>
+                            </div>
+                            <div class="col-xs-24">
+                                <div class="col-xs-24 col-md-12 mb-content">
+                                    <p>[field:description/]</p>
+                                    <div class="text-center"><a href="[field:arcurl/]" class="read-btn">查看更多</a></div>
+                                </div>
+                            </div>
+                    </div>
+                    {/dede:arclist}                              
+            </div>
+        </div>
+        <hr class="hidden-md hidden-lg">
+        <div class="row news container-wrap">
+            <div class="row">
+                <h4 class="section-title">风味美食</h4>
+                <h5 class="slogan">健康是财富，美食是必须，口感是要求</h5>
+                <h5 class="slogan2">爱美食，爱健康，看新闻，知大事，更健康</h5>
+            </div>
+            <div class="row">
+                <ul class="row hidden-xs hidden-sm">
+                    {dede:arclist row='4' orderby='id' typeid='4' }                          
+                    <li class="col-sm-12 col-md-6 col-lg-6 pc-list-item">
+                        <div class="row text-center">
+                           <a href="[field:arcurl/]">
+                                <div class="inline-block news-pic">
+                                    <img src="[field:picname/]" alt="">
+                                    <p>[field:title/]</p>
+                                </div>
+                           </a>
+                        </div>
+                        <div class="text-center"><a href="[field:arcurl/]" class="read-btn">查看更多</a></div>
+                    </li>
+                    {/dede:arclist}  
+                </ul>
+                <div class="hidden-md hidden-lg">
+                    <ul>
+                        {dede:arclist row='4' orderby='id' typeid='4' }  
+                       <li>
+                           <a href="[field:arcurl/]">
+                               <div class="item">
+                                   <div class="item-pic"><img src="[field:picname/]" alt=""></div>
+                                   <div class="item-content">
+                                       <h3 class="item-title cutout-text">[field:title/]</h3>
+                                       <p class="item-text"> [field:description/] </p>
+                                   </div>
+                               </div>
+                           </a>
+                       </li>
+                       {/dede:arclist} 
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    {dede:include filename='footer.htm'/}    
+    <script src="/templets/default/js/jquery-3.2.1.min.js"></script>    
+    <script src="/templets/default/js/basic.js"></script>
+    <script src="/templets/default/js/nav.js"></script>
+    <script src="/templets/default/js/touchSlide.1.1.js"></script>
+    <script type="text/javascript">
+        TouchSlide({ 
+            slideCell:"#focus",
+            titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+            mainCell:".bd ul", 
+            effect:"left", 
+            autoPlay:true,//自动播放
+            autoPage:true, //自动分页
+            switchLoad:"_src", //切换加载，真实图片路径为"_src" 
+            delayTime:500,
+            interTime:3000,
+            prevCell:'.prevbtn',
+            nextCell:'.nextbtn',
+        });
+    </script>
+</body>
+</html>

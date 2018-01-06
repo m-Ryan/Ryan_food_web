@@ -1,0 +1,1 @@
+<li><i class="icon anticon icon-heart"></i><a href="[field:typelink /]">[field:typename /]</a></li>

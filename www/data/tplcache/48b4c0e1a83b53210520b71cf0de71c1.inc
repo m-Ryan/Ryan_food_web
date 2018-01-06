@@ -1,0 +1,1 @@
+<li><a href="#"><img _src="/templets/default/images/knowledge.png" src="/templets/default/images/knowledge.png" /></a></li>

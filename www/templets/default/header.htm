@@ -1,0 +1,35 @@
+<div class="row header hidden-xs">
+    <div class="headerbg"><img src="/templets/default/images/headerbg.png" alt=""></div>
+    <div class="header-content">
+        <div class="lg-placeholder visible-lg"></div>
+        <div class="logo center"><a href="#"><img src="/templets/default/images/logo1.png" alt=""></a></div>
+        <ul class="row pc-nav center">
+            <li><a href='{dede:global.cfg_cmsurl/}/'>首页<span class="underline"></span></a></li>
+            {dede:channel type='top' row='10'}
+            <li><a href='[field:typeurl/]' [field:rel/]>[field:typename/]<span class="underline"></span></a></li>
+            {/dede:channel}
+        </ul>
+        <div class="web-name-container center text-center">
+            <p class="web-name">Ryan　美　食　屋</p>
+            <p class="web-address">Ryan's　Gourmet　House</p>
+        </div>
+        <p class="slogan text-center">给你家的舒服，给你夏日的温暖，爱美食，爱DIY</p>
+    </div>
+</div>
+
+<!-- 移动端导航  -->
+<div class=" visible-xs" id="rs-nav">
+    <div class="rs-nav-menubar">
+        <sapn class="rs-btn rs-btn-icon"><i class="icon anticon icon-bars"></i></sapn>
+        <p class="web-name">Ryan　美　食　屋</p>
+    </div>
+    <ul class="rs-nav-menu col-xs-24">
+        <li><i class="icon anticon icon-home"></i><a href="{dede:global.cfg_cmsurl/}">首页</a></li>
+        {dede:type typeid='1'}<li><i class="icon anticon icon-profile"></i><a href="[field:typelink /]">[field:typename /]</a></li>{/dede:type}
+        {dede:type typeid='2'}<li><i class="icon anticon icon-like1"></i><a href="[field:typelink /]">[field:typename /]</a></li>{/dede:type}
+        {dede:type typeid='3'}<li><i class="icon anticon icon-book"></i><a href="[field:typelink /]">[field:typename /]</a></li>{/dede:type}
+        {dede:type typeid='4'}<li><i class="icon anticon icon-star"></i><a href="[field:typelink /]">[field:typename /]</a></li>{/dede:type}
+        {dede:type typeid='5'}<li><i class="icon anticon icon-heart"></i><a href="[field:typelink /]">[field:typename /]</a></li>{/dede:type}                
+        {dede:type typeid='6'}<li><i class="icon anticon icon-user"></i><a href="[field:typelink /]">[field:typename /]</a></li>{/dede:type}
+    </ul>
+</div>

@@ -1,0 +1,1 @@
+<li><i class="icon anticon icon-profile"></i><a href="[field:typelink /]">新闻杂谈</a></li>

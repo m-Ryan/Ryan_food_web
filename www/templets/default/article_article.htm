@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">   
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ryan美食屋</title>
+    <link rel="stylesheet" href="/templets/default/style/iconfont.css">
+    <link rel="stylesheet" href="/templets/default/style/responsive.css">
+    <link rel="stylesheet" href="/templets/default/style/basic.css">
+    <link rel="stylesheet" href="/templets/default/style/recommand.css">    
+    <link rel="stylesheet" href="/templets/default/style/content.css">
+    
+</head>
+<body>
+    <div class="container-fluid center">
+        {dede:include filename='header.htm'/}            
+
+        <div class="container center container-wrap">
+            <div class="position">
+                <p>当前位置：{dede:field name='position'/}</p>
+            </div>
+            <div class="row">
+                <div class="content col-xs-24 col-sm-24 col-md-16">
+                    <h1 class="tittle">{dede:field.title/}</h1>
+                    <h2 class="writer">时间：{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)"/}　　作者：{dede:field.writer/} 　　来源：{dede:field.source/}</h2>
+                    <p>{dede:field.body/}</p>
+                </div>
+                {dede:include filename='recommand.htm'/}                
+            </div>
+        </div>
+        {dede:include filename='footer.htm'/} 
+    </div>
+    <script src="/templets/default/js/jquery-3.2.1.min.js"></script>    
+    <script src="/templets/default/js/basic.js"></script>
+    <script src="/templets/default/js/nav.js"></script>
+</body>
+</html>
